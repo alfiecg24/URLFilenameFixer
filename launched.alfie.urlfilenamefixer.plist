@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>launched.alfie.urlfilenamefixer</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>sh</string>
+		<string>-c</string>
+		<string>~/URLDecoder ~/Downloads</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>~/URLFilenameFixerLogs/stderr.log</string>
+	<key>StandardOutPath</key>
+	<string>~/URLFilenameFixerLogs/stdout.log</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Minute</key>
+		<integer>20</integer>
+	</dict>
+	<key>UserName</key>
+	<string>alfie</string>
+	<key>WorkingDirectory</key>
+	<string>~</string>
+</dict>
+</plist>

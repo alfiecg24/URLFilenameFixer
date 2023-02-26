@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import urllib.parse, sys, os
+# get directory path from argument
+if len(sys.argv) > 1:
+    path = sys.argv[1]
+else:
+    print("Usage: URLDecoder.py <path>")
+    sys.exit(1)
+if path.endswith("/") == False:
+    path += "/"
+# URL decode each file name in directory
+for file in os.listdir(path):
+    newFile = urllib.parse.unquote(file)
+    # rename file
+    if file != newFile:
+        os.rename(path + file, path + newFile)
+        print("Renamed " + file + " to " + newFile)
